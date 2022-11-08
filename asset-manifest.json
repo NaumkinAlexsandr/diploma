@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/diploma/static/css/main.6e015481.css",
-    "main.js": "/diploma/static/js/main.8bf203d7.js",
+    "main.js": "/diploma/static/js/main.11c07f5f.js",
     "index.html": "/diploma/index.html",
     "main.6e015481.css.map": "/diploma/static/css/main.6e015481.css.map",
-    "main.8bf203d7.js.map": "/diploma/static/js/main.8bf203d7.js.map"
+    "main.11c07f5f.js.map": "/diploma/static/js/main.11c07f5f.js.map"
   },
   "entrypoints": [
     "static/css/main.6e015481.css",
-    "static/js/main.8bf203d7.js"
+    "static/js/main.11c07f5f.js"
   ]
 }
