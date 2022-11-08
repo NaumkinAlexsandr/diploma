@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { HeaderFull } from "../core/headerFull/headerFull";
-import { HeaderLine } from "../core/headerLine/headerLine";
+import HeaderBig from "../components/header/headerBig";
+import SectionAnalizer from "../components/sectionAnalizer/sectionAnalizer";
 
-function Analizer(props) {
-  return (
-    <div id="analizer">
-      <HeaderFull src="./img/square.png" to="/diploma/apps" />
-      <HeaderLine />
-    </div>
-  );
+class Analizer extends React.Component {
+    render() {
+        return (<>
+            <HeaderBig src="./img/rectangle.svg" />
+            <SectionAnalizer />
+        </>)
+    }
 }
 
 export default Analizer;

@@ -1,8 +1,0 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins";
-
-#login_form {
-  margin-top: 40px;
-  margin-left: 40px;
-  @include inputText;
-}

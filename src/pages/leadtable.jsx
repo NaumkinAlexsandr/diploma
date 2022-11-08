@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { HeaderFull } from "../core/headerFull/headerFull";
-import { HeaderLine } from "../core/headerLine/headerLine";
+import HeaderBig from "../components/header/headerBig";
+import SectionLead from "../components/sectionLead/sectionLead";
 
-function LeadTable(props) {
-  return (
-    <div id="lead_table">
-      <HeaderFull src="./img/star.png" to="/diploma/apps" />
-      <HeaderLine />
-    </div>
-  );
+class LeadTable extends React.Component {
+  render() {
+    return (<>
+      <HeaderBig src="./img/star.svg" />
+      <SectionLead />
+    </>)
+  }
 }
 
 export default LeadTable;
