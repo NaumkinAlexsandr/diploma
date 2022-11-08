@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
-import Header from "../components/header/header";
+import { HeaderEmpty } from "../core/headerEmpty/headerEmpty";
+import { HeaderLine } from "../core/headerLine/headerLine";
 
 const NofoundPage = () => {
   return (
     <div>
-      <Header />
-      <div className="container">Page not found <Link to="/graduate_work_js">Go Home</Link> </div>
+      <HeaderEmpty />
+      <HeaderLine />
+      <div className="container">
+        Page not found <Link to="/diploma/">Go Home</Link>{" "}
+      </div>
     </div>
   );
 };

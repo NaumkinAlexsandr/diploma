@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import "variables";
+@import "mixins";
+@import "../components/apps/formApps.scss";
+@import "../components/login/formLogin.scss";
+@import "../components/login/loginSection.scss";
+
+@import "../core/headerLine/headerLine.scss";
+@import "../core/headerEmpty/headerEmpty.scss";
+@import "../core/headerFull/headerFull.scss";
+@import "../core/button/button.scss";
+@import "../core/input/input.scss";

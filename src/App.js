@@ -1,23 +1,23 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import LoginPage from "./pages/loginPage";
-import AppsPage from "./pages/appsPage"
-import Tasks from './pages/tasks';
-import LeadTable from './pages/leadTable';
-import Discovery from './pages/discovery';
-import Analizer from './pages/analizer';
-import NofoundPage from "./pages/nofoundPage";
+import LoginPage from "./pages/login";
+import AppsPage from "./pages/apps";
+import Tasks from "./pages/tasks";
+import LeadTable from "./pages/leadtable";
+import Discovery from "./pages/discovery";
+import Analizer from "./pages/analizer";
+import NofoundPage from "./pages/nofoundpage";
 class App extends React.Component {
   render() {
     return (
       <Routes>
-          <Route path="/graduate_work_js" element={<LoginPage />} />
-          <Route path="/graduate_work_js/appsPage" element={<AppsPage />} />
-          <Route path="/graduate_work_js/tasks" element={<Tasks />} />
-          <Route path="/graduate_work_js/leadTable" element={<LeadTable />} />
-          <Route path="/graduate_work_js/discovery" element={<Discovery />} />
-          <Route path="/graduate_work_js/analizer" element={<Analizer />} />
-          <Route path="*" element={<NofoundPage />} />
+        <Route path="/diploma/" element={<LoginPage />} />
+        <Route path="/diploma/apps" element={<AppsPage />} />
+        <Route path="/diploma/tasks" element={<Tasks />} />
+        <Route path="/diploma/leadTable" element={<LeadTable />} />
+        <Route path="/diploma/discovery" element={<Discovery />} />
+        <Route path="/diploma/analizer" element={<Analizer />} />
+        <Route path="*" element={<NofoundPage />} />
       </Routes>
     );
   }

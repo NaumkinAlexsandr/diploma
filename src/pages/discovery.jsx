@@ -1,13 +1,16 @@
 import React from "react";
-import HeaderBig from "../components/header/headerBig";
-import SectionDiscovery from "../components/sectionDiscovery/sectionDiscovery";
+import { Link } from "react-router-dom";
+import { HeaderFull } from "../core/headerFull/headerFull";
+import { HeaderLine } from "../core/headerLine/headerLine";
 
 class Discovery extends React.Component {
   render() {
-    return (<>
-      <HeaderBig src="./img/ellipse.svg" />
-      <SectionDiscovery />
-    </>)
+    return (
+      <div id="discovery">
+        <HeaderFull src="./img/ellipse.png" to="/diploma/apps" />
+        <HeaderLine />
+      </div>
+    );
   }
 }
 

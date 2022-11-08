@@ -1,14 +1,17 @@
 import React from "react";
-import HeaderBig from "../components/header/headerBig";
-import SectionTasks from "../components/sectionTasks/sectionTasks";
+import { Link } from "react-router-dom";
+import { HeaderFull } from "../core/headerFull/headerFull";
+import { HeaderLine } from "../core/headerLine/headerLine";
 
 class Tasks extends React.Component {
-    render() {
-        return (<>
-            <HeaderBig src="./img/polygon2.svg" />
-            <SectionTasks />
-        </>)
-    }
+  render() {
+    return (
+      <div id="tasks">
+        <HeaderFull src="./img/triangleYellow.png" to="/diploma/apps" />
+        <HeaderLine />
+      </div>
+    );
+  }
 }
 
 export default Tasks;

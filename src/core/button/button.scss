@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+button {
+  @include btn;
+  @include buttonText;
+}
+
+a {
+  position: absolute;
+  width: 231px;
+  height: 66px;
+}
