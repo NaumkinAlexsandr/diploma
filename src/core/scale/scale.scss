@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+#analizerForm {
+  .scale {
+    height: 13px;
+    background-color: $red;
+    margin-right: 5px;
+  }
+
+  .scale_one {
+    width: 105px;
+  }
+
+  .scale_two {
+    width: 97px;
+  }
+
+  .scale_three {
+    width: 18px;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+@import "../../core/percent/percent.scss";
+@import "../../core/percent/percent.scss";
+
+#analizer {
+  h1 {
+    margin: 30px 0 17px 24px;
+    @include titleText;
+  }
+
+  h3 {
+    margin-left: 24px;
+    @include inputText;
+  }
+
+  #analizerForm {
+    margin: 23px 0 0 24px;
+
+    div {
+      width: auto;
+      height: 15px;
+      display: flex;
+      margin-bottom: 12px;
+    }
+  }
+}

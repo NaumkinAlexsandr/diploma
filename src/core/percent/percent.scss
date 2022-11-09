@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+#analizerForm .percent_scale {
+  h5 {
+    margin-left: 11px;
+    @include liText;
+  }
+
+  h5:last-child {
+    margin-left: 5px;
+  }
+}

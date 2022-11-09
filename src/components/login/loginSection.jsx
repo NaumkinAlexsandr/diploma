@@ -1,5 +1,5 @@
 import React from "react";
-import "./formLogin.scss";
+import "./loginSection.scss";
 import { FormLogin } from "./formLogin";
 import { Button } from "../../core/button/button";
 import { Link } from "react-router-dom";

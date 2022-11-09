@@ -8,12 +8,14 @@
 
 @import "variables";
 @import "mixins";
-@import "../components/apps/formApps.scss";
-@import "../components/login/formLogin.scss";
-@import "../components/login/loginSection.scss";
 
-@import "../core/headerLine/headerLine.scss";
+@import "../components/login/loginSection.scss";
+@import "../components/apps/formApps.scss";
+@import "../components/formAnalizer/formAnalizer.scss";
+@import "../components/formDiscovery/formDiscovery.scss";
+
 @import "../core/headerEmpty/headerEmpty.scss";
 @import "../core/headerFull/headerFull.scss";
+@import "../core/headerLine/headerLine.scss";
 @import "../core/button/button.scss";
 @import "../core/input/input.scss";
