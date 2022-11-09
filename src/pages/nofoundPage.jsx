@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { HeaderEmpty } from "../core/headerEmpty/headerEmpty";
 import { HeaderLine } from "../core/headerLine/headerLine";
 
-const NofoundPage = () => {
+function NofoundPage() {
   return (
     <div>
       <HeaderEmpty />
@@ -12,6 +12,6 @@ const NofoundPage = () => {
       </div>
     </div>
   );
-};
+}
 
-export default NofoundPage;
+export { NofoundPage };

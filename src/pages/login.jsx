@@ -4,15 +4,13 @@ import { LoginSection } from "../components/login/loginSection";
 import { Link } from "react-router-dom";
 import React from "react";
 
-class LoginPage extends React.Component {
-  render() {
-    return (
-      <div id="login">
-        <HeaderEmpty />
-        <HeaderLine />
-        <LoginSection />
-      </div>
-    );
-  }
+function Login() {
+  return (
+    <div id="login">
+      <HeaderEmpty />
+      <HeaderLine />
+      <LoginSection />
+    </div>
+  );
 }
-export default LoginPage;
+export { Login };
