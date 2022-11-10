@@ -162,6 +162,61 @@
   color: #000000;
 }
 
+h1 {
+  margin: 30px 0 17px 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+}
+
+table {
+  margin: 12px 0 0 24px;
+}
+table th {
+  padding: 0 10px;
+  width: auto;
+  height: 30px;
+  background-color: #ffdc00;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+table td {
+  width: auto;
+  height: 30px;
+  padding: 0 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  position: relative;
+}
+table .completed {
+  background-color: #bbfc1a;
+  border: 1px solid #000000;
+}
+table .deleted {
+  background: #ff5c00;
+  border: 1px solid #000000;
+}
+table .zeroDays {
+  color: #000000;
+}
+table .oneDays {
+  color: #ffdc00;
+}
+table .twoDays {
+  color: #ff5c00;
+}
+
 #header_empty {
   width: 100%;
   height: 80px;
