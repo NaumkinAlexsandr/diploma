@@ -1,299 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.scrol {
+  overflow-x: scroll;
 }
-
-#login_form {
-  margin-top: 40px;
-  margin-left: 40px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
+.scrol::-webkit-scrollbar {
+  width: 0px;
 }
-
-#login {
-  position: relative;
+.scrol .lead_table {
+  width: 490px;
+  height: 142px;
+  margin: 12px 0 10px 24px;
 }
-#login #login_section {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-#login #login_section .triangle {
-  width: 140px;
-  height: 140px;
-  margin-top: 44px;
-  position: relative;
-  left: 145px;
-}
-#login #login_section .login_btn {
-  left: 100px;
-  top: 568px;
-}
-
-#apps h1 {
-  margin: 30px 0 17px 24px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  color: #000000;
-}
-#apps .app {
-  margin: 42px 0 42px 24px;
-  width: 150px;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#apps h4 {
-  margin-left: 20px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-#apps a {
-  width: 150px;
-  height: 50px;
-  position: absolute;
-  left: 24px;
-}
-
-#analizerForm .percent_scale h5 {
-  margin-left: 11px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #000000;
-}
-#analizerForm .percent_scale h5:last-child {
-  margin-left: 5px;
-}
-
-#analizerForm .percent_scale h5 {
-  margin-left: 11px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #000000;
-}
-#analizerForm .percent_scale h5:last-child {
-  margin-left: 5px;
-}
-
-#analizer h1 {
-  margin: 30px 0 17px 24px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  color: #000000;
-}
-#analizer h3 {
-  margin-left: 24px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-#analizer #analizerForm {
-  margin: 23px 0 0 24px;
-}
-#analizer #analizerForm div {
+.scrol .lead_table th {
+  padding: 0 10px;
   width: auto;
-  height: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 12px;
-}
-
-#analizerForm .percent_scale h5 {
-  margin-left: 11px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #000000;
-}
-#analizerForm .percent_scale h5:last-child {
-  margin-left: 5px;
-}
-
-#analizerForm .percent_scale h5 {
-  margin-left: 11px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #000000;
-}
-#analizerForm .percent_scale h5:last-child {
-  margin-left: 5px;
-}
-
-#analizer h1 {
-  margin: 30px 0 17px 24px;
+  height: 30px;
+  background-color: #ffdc00;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  color: #000000;
-}
-#analizer h3 {
-  margin-left: 24px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
 }
-#analizer #analizerForm {
-  margin: 23px 0 0 24px;
-}
-#analizer #analizerForm div {
+.scrol .lead_table td {
   width: auto;
-  height: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 12px;
-}
-
-#header_empty {
-  width: 100%;
-  height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  height: 30px;
+  padding: 0 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
   position: relative;
 }
-
-#header {
-  width: 100%;
-  height: 80px;
+.scrol .lead_table td a {
+  width: 93px;
+  height: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relatisticve;
-}
-#header .burger {
-  margin-left: 24px;
-}
-#header .icons {
-  margin-right: 17px;
-}
-#header a {
-  width: 60px;
-  height: 50px;
   position: absolute;
-  top: 15px;
-  left: 24px;
-}
-
-#line {
-  position: absolute;
-  width: 100%;
-  height: 0px;
-  left: 0px;
-  top: 82px;
-  border: 3px solid #1b1b1b;
-  -webkit-transform: rotate(-0.27deg);
-          transform: rotate(-0.27deg);
-}
-
-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 22px 84px;
-  position: absolute;
-  width: 231px;
-  height: 66px;
-  background: #bbfc1a;
-  border: 1px solid #bbfc1a;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  color: #000000;
-}
-
-a {
-  position: absolute;
-  width: 231px;
-  height: 66px;
-}
-
-input {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  padding-left: 10px;
-  display: block;
-  width: 346px;
-  height: 66px;
-  background: #fffff4;
-  border: 1px solid #000000;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
+  top: 0;
 }

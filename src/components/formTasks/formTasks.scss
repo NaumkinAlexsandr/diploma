@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+h1 {
+  margin: 30px 0 17px 24px;
+  @include titleText;
+}
+
+.task_table {
+  margin: 12px 0 0 24px;
+
+  th {
+    padding: 0 10px;
+    width: auto;
+    height: 30px;
+    background-color: $yellow;
+    @include tableHead;
+  }
+
+  td {
+    width: auto;
+    height: 30px;
+    padding: 0 10px;
+    @include tableBody;
+    position: relative;
+  }
+
+  .completed {
+    background-color: $green;
+    border: 1px solid #000000;
+  }
+
+  .deleted {
+    background: $red;
+    border: 1px solid #000000;
+  }
+
+  .zeroDays {
+    color: $dark;
+  }
+
+  .oneDays {
+    color: $yellow;
+  }
+
+  .twoDays {
+    color: $red;
+  }
+}

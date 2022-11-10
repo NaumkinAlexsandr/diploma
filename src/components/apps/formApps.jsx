@@ -4,7 +4,7 @@ import "./formApps.scss";
 
 function FormApps() {
   return (
-    <section>
+    <>
       <BlockApp
         className="app"
         to="/diploma/leadtable"
@@ -33,7 +33,7 @@ function FormApps() {
         src="./img/square.png"
         alt="square"
       />
-    </section>
+    </>
   );
 }
 

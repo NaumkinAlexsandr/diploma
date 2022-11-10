@@ -5,12 +5,14 @@ import { FormApps } from "../components/apps/formApps";
 
 function Apps() {
   return (
-    <div id="apps">
+    <>
       <HeaderEmpty />
       <HeaderLine />
-      <h1>Apps</h1>
-      <FormApps />
-    </div>
+      <section id="apps">
+        <h1>Apps</h1>
+        <FormApps />
+      </section>
+    </>
   );
 }
 
