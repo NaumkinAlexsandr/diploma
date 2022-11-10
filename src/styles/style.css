@@ -1,25 +1,53 @@
-#script #script_form {
-  margin-left: 42px;
+#change_tasks .tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 0 23px;
+  overflow-x: scroll;
+  overflow-x: scroll;
+}
+#change_tasks .tasks::-webkit-scrollbar {
+  width: 0px;
+}
+#change_tasks .tasks .task {
+  padding-top: 17px;
+  width: 392px;
+  height: 50px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+  border: 1px solid #000000;
 }
-#script #script_form input {
-  margin: 8px 0 20px 0;
-  display: block;
-  width: 346px;
-  height: 66px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
+#change_tasks .tasks .arrow {
+  margin-left: 185px;
 }
-#script .btn_script {
+#change_tasks .tasks .first,
+#change_tasks .tasks .second {
+  background-color: #bbfc1a;
+}
+#change_tasks .tasks .third {
+  background-color: #ff5c00;
+}
+#change_tasks .tasks .fourth,
+#change_tasks .tasks .fifth {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(187, 252, 26, 0.15);
+}
+#change_tasks .tasks .btnTask {
   left: 100px;
-  top: 552px;
+  top: 652px;
 }

@@ -7,7 +7,11 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 0 0 23px;
-
+    overflow-x: scroll;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
     .task {
       padding-top: 17px;
       width: 392px;
