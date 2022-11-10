@@ -8,7 +8,9 @@ function NofoundPage() {
       <HeaderEmpty />
       <HeaderLine />
       <div className="container">
-        Page not found <Link to="/diploma/">Go Home</Link>{" "}
+        <h1>
+          Page not found <Link to="/diploma/">Go Home</Link>
+        </h1>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import "./formLogin.scss";
 import { Input } from "../../core/input/input";
+import { Button } from "../../core/button/button";
 
 function FormLogin(props) {
   return (
@@ -17,6 +18,7 @@ function FormLogin(props) {
         type="password"
         placeholder="Enter your password"
       />
+      <Button to="/diploma/apps" className="login_btn" name="Submit" />
     </form>
   );
 }

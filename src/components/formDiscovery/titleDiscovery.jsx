@@ -8,7 +8,7 @@ function TitleDiscovery() {
   return (
     <div className="title">
       <h1>Discovery</h1>
-      <AddColumn />
+      <AddColumn to="/diploma/createscript" />
     </div>
   );
 }

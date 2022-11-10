@@ -5,7 +5,7 @@ function TdLead(props) {
   return (
     <td>
       {props.tdText}
-      <Link to="../html/changeTasks.html"></Link>
+      <Link to={props.to}></Link>
     </td>
   );
 }

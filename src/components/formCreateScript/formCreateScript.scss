@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+#script {
+  #script_form {
+    margin-left: 42px;
+    @include inputText;
+
+    input {
+      margin: 8px 0 20px 0;
+      display: block;
+      width: 346px;
+      height: 66px;
+      @include inputText;
+    }
+  }
+
+  .btn_script {
+    left: 100px;
+    top: 552px;
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+#change_tasks {
+  .tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 23px;
+
+    .task {
+      padding-top: 17px;
+      width: 392px;
+      height: 50px;
+      text-align: center;
+      align-items: center;
+      @include inputText;
+      border: 1px solid #000000;
+    }
+
+    .arrow {
+      margin-left: 185px;
+    }
+
+    .first,
+    .second {
+      background-color: $green;
+    }
+
+    .third {
+      background-color: $red;
+    }
+
+    .fourth,
+    .fifth {
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      background-color: $lightGreen;
+    }
+
+    .btnTask {
+      left: 100px;
+      top: 652px;
+    }
+  }
+}

@@ -1,44 +1,25 @@
-.scrol {
-  overflow-x: scroll;
-}
-.scrol::-webkit-scrollbar {
-  width: 0px;
-}
-.scrol .lead_table {
-  width: 490px;
-  height: 142px;
-  margin: 12px 0 10px 24px;
-}
-.scrol .lead_table th {
-  padding: 0 10px;
-  width: auto;
-  height: 30px;
-  background-color: #ffdc00;
+#script #script_form {
+  margin-left: 42px;
   font-family: "Inter";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
 }
-.scrol .lead_table td {
-  width: auto;
-  height: 30px;
-  padding: 0 10px;
+#script #script_form input {
+  margin: 8px 0 20px 0;
+  display: block;
+  width: 346px;
+  height: 66px;
   font-family: "Inter";
   font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
   color: #000000;
-  position: relative;
 }
-.scrol .lead_table td a {
-  width: 93px;
-  height: 34px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 0;
+#script .btn_script {
+  left: 100px;
+  top: 552px;
 }
