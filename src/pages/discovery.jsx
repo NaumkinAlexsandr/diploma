@@ -9,6 +9,7 @@ function Discovery() {
     <div id="discovery">
       <HeaderFull src="./img/ellipse.png" to="/diploma/apps" />
       <HeaderLine />
+      <FormDiscovery />
     </div>
   );
 }

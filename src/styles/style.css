@@ -139,43 +139,11 @@
   margin-bottom: 12px;
 }
 
-#analizerForm .percent_scale h5 {
-  margin-left: 11px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #000000;
-}
-#analizerForm .percent_scale h5:last-child {
-  margin-left: 5px;
-}
-
-#analizerForm .percent_scale h5 {
-  margin-left: 11px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #000000;
-}
-#analizerForm .percent_scale h5:last-child {
-  margin-left: 5px;
-}
-
-#analizer h1 {
-  margin: 30px 0 17px 24px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  color: #000000;
-}
-#analizer h3 {
+#social {
   margin-left: 24px;
+}
+#social ul {
+  margin-bottom: 10px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -183,16 +151,15 @@
   line-height: 17px;
   color: #000000;
 }
-#analizer #analizerForm {
-  margin: 23px 0 0 24px;
-}
-#analizer #analizerForm div {
-  width: auto;
-  height: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 12px;
+#social li {
+  padding-top: 8px;
+  list-style: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
 }
 
 #header_empty {
@@ -296,4 +263,19 @@ input {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+}
+
+#addColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+#addColumn img {
+  margin-right: 17px;
+}
+#addColumn a {
+  width: 35px;
+  height: 35px;
+  position: absolute;
 }

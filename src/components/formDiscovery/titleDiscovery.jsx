@@ -1,10 +1,16 @@
 import React from "react";
-import { Percent } from "../../core/percent/percent";
-import { Scale } from "../../core/scale/scale";
+import { Link } from "react-router-dom";
+import { AddColumn } from "../../core/addColumn/addColumn";
+
 import "./titleDiscovery.scss";
 
-function TitleDiscovery(props) {
-  return <div id="analizerForm"></div>;
+function TitleDiscovery() {
+  return (
+    <div className="title">
+      <h1>Discovery</h1>
+      <AddColumn />
+    </div>
+  );
 }
 
 export { TitleDiscovery };
