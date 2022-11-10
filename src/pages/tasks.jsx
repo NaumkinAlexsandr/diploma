@@ -6,12 +6,14 @@ import { FormTasks } from "../components/formTasks/formTasks";
 
 function Tasks() {
   return (
-    <div id="tasks">
+    <>
       <HeaderFull src="./img/triangleYellow.png" to="/diploma/apps" />
       <HeaderLine />
-      <h1>Tasks</h1>
-      <FormTasks />
-    </div>
+      <section id="tasks">
+        <h1>Tasks</h1>
+        <FormTasks />
+      </section>
+    </>
   );
 }
 

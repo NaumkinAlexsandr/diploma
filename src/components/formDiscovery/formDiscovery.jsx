@@ -1,12 +1,10 @@
 import React from "react";
-import { TitleDiscovery } from "./titleDiscovery";
 import { NewLi } from "../../core/newLI/newLI";
 import "./titleDiscovery.scss";
 
 function FormDiscovery(props) {
   return (
-    <div id="discovery">
-      <TitleDiscovery />
+    <>
       <div id="social">
         <ul>
           Upwork
@@ -27,7 +25,7 @@ function FormDiscovery(props) {
           <NewLi liText="Upwork script 3. Check similar jobs" />
         </ul>
       </div>
-    </div>
+    </>
   );
 }
 

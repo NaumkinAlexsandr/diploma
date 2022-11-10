@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+#createLead {
+  #leadForm {
+    margin-left: 42px;
+    @include inputText;
+
+    input {
+      margin: 8px 0 20px 0;
+      display: block;
+      width: 346px;
+      height: 66px;
+      @include inputText;
+    }
+  }
+
+  .btnLead {
+    left: 100px;
+    top: 752px;
+  }
+}

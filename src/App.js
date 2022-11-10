@@ -4,6 +4,7 @@ import { Login } from "./pages/login";
 import { Apps } from "./pages/apps";
 import { Tasks } from "./pages/tasks";
 import { LeadTable } from "./pages/leadtable";
+import { CreateLead } from "./pages/createlead";
 import { Discovery } from "./pages/discovery";
 import { Analizer } from "./pages/analizer";
 import { NofoundPage } from "./pages/nofoundpage";
@@ -14,6 +15,7 @@ function App() {
       <Route path="/diploma/apps" element={<Apps />} />
       <Route path="/diploma/tasks" element={<Tasks />} />
       <Route path="/diploma/leadTable" element={<LeadTable />} />
+      <Route path="/diploma/createlead" element={<CreateLead />} />
       <Route path="/diploma/discovery" element={<Discovery />} />
       <Route path="/diploma/analizer" element={<Analizer />} />
       <Route path="*" element={<NofoundPage />} />

@@ -2,20 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HeaderFull } from "../core/headerFull/headerFull";
 import { HeaderLine } from "../core/headerLine/headerLine";
-import { TitleLeadTable } from "../components/formLeadTable/titleLeadTable";
-import { FormLeadTable } from "../components/formLeadTable/formLeadTable";
+import { FormCreateLead } from "../components/formCreateLead/formCreateLead";
 
-function LeadTable() {
+function CreateLead() {
   return (
     <>
       <HeaderFull src="./img/star.png" to="/diploma/apps" />
       <HeaderLine />
-      <section id="lead_table">
-        <TitleLeadTable />
-        <FormLeadTable />
+      <section id="createLead">
+        <h1>Create lead</h1>
+        <FormCreateLead />
       </section>
     </>
   );
 }
 
-export { LeadTable };
+export { CreateLead };

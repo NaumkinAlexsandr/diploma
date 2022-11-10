@@ -5,7 +5,7 @@ import "./formTasks.scss";
 
 function FormTasks(props) {
   return (
-    <table>
+    <table className="task_table">
       <TableHead />
       <TableBody />
     </table>
