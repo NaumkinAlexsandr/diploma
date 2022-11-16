@@ -1,19 +1,38 @@
 import React from "react";
 import "./formLogin.scss";
-import { Input } from "../../core/input/input";
-import { Button } from "../../core/button/button";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useAuth } from "../../hooks/useAuth";
+import { Input } from "../../core/inputs/input";
+import { Button } from "../../core/buttons/button";
 
 function FormLogin(props) {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { signin } = useAuth();
+
+  const fromPage = location.state?.from?.pathname || "/diploma";
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const user = form.email.value;
+
+    signin(user, () => navigate(fromPage, { replace: true }));
+    console.log(form.email.value);
+  };
+
   return (
-    <form id={props.id}>
+    <form id={props.id} onSubmit={handleSubmit}>
       <Input
-        name="Email"
+        labelName="Email"
+        name="email"
         className="email"
-        type="text"
+        type="email"
         placeholder="Enter your email"
       />
       <Input
-        name="Password"
+        labelName="Password"
+        name="password"
         className="password"
         type="password"
         placeholder="Enter your password"

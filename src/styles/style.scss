@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 @import "variables";
 @import "mixins";
 
@@ -17,5 +11,14 @@
 @import "../core/headerEmpty/headerEmpty.scss";
 @import "../core/headerFull/headerFull.scss";
 @import "../core/headerLine/headerLine.scss";
-@import "../core/button/button.scss";
-@import "../core/input/input.scss";
+@import "../core/buttons/button.scss";
+@import "../core/inputs/input.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white;
+}

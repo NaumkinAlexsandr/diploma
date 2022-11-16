@@ -2,7 +2,7 @@ import React from "react";
 import "./formChangeTasks.scss";
 import { Arrow } from "../../core/arrow";
 import { Task } from "../../core/task";
-import { Button } from "../../core/button/button";
+import { Button } from "../../core/buttons/button";
 
 function FormChange() {
   return (

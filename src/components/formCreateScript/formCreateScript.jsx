@@ -1,25 +1,28 @@
 import React from "react";
-import { Input } from "../../core/input/input";
-import { Button } from "../../core/button/button";
+import { Input } from "../../core/inputs/input";
+import { Button } from "../../core/buttons/button";
 import "./formCreateScript.scss";
 
 function FormCreateScript() {
   return (
     <form id="script_form">
       <Input
-        name="Name"
+        labelName="Name"
+        name="name"
         className="scriptName"
         type="text"
         placeholder="Enter your name"
       />
       <Input
-        name="Source"
+        labelName="Source"
+        name="source"
         className="scriptSource"
         type="text"
         placeholder="Enter your source"
       />
       <Input
-        name="Link"
+        labelName="Link"
+        name="link"
         className="scriptLink"
         type="text"
         placeholder="Enter your link"

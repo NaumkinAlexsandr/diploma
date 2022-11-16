@@ -4,8 +4,9 @@ import "./input.scss";
 function Input(props) {
   return (
     <label>
-      {props.name}
+      {props.labelName}
       <input
+        name={props.name}
         className={props.className}
         type={props.type}
         placeholder={props.placeholder}

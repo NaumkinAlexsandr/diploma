@@ -18,5 +18,11 @@
   .btnLead {
     left: 100px;
     top: 752px;
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }

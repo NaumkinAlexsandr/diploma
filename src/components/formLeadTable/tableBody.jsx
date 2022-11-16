@@ -1,6 +1,7 @@
 import React from "react";
 import { Td } from "../../core/td";
 import { TdLead } from "../../core/tdLead";
+import { LaadTable } from "./leadTables";
 
 function TableBody() {
   return (
@@ -26,6 +27,7 @@ function TableBody() {
         <TdLead tdText="Offer" to="/diploma/changetasks"></TdLead>
         <Td tdText="066 762 28 28"></Td>
       </tr>
+      <LaadTable />
     </thead>
   );
 }
