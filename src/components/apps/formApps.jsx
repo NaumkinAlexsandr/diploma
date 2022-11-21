@@ -1,5 +1,5 @@
 import React from "react";
-import { BlockApp } from "./blockApp";
+import { BlockApp } from "./BlockApp";
 import "./formApps.scss";
 
 function FormApps() {

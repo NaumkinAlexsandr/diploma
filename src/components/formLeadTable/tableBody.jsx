@@ -1,11 +1,12 @@
 import React from "react";
-import { Td } from "../../core/td";
-import { TdLead } from "../../core/tdLead";
-import { LaadTable } from "./leadTables";
+import { Td } from "../../core/table/Td";
+import { TdLead } from "../../core/table/TdLead";
+import { LaadTable } from "./LeadTables";
+import { LeadTask } from "./LeadTask";
 
 function TableBody() {
   return (
-    <thead>
+    <tbody>
       <tr>
         <Td tdText="Simple Way"></Td>
         <Td tdText="Upwork"></Td>
@@ -28,7 +29,7 @@ function TableBody() {
         <Td tdText="066 762 28 28"></Td>
       </tr>
       <LaadTable />
-    </thead>
+    </tbody>
   );
 }
 

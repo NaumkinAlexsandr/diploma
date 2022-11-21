@@ -1,5 +1,5 @@
 import React from "react";
-import { Th } from "../../core/th";
+import { Th } from "../../core/table/Th";
 
 function TableHead() {
   return (

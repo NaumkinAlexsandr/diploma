@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { AddColumn } from "../../core/addColumn/addColumn";
+import { AddColumn } from "../../core/addColumn/AddColumn";
 
 import "./titleLeadTable.scss";
 

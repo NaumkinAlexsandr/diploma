@@ -1,6 +1,6 @@
 import React from "react";
-import { Percent } from "../../core/percent/percent";
-import { Scale } from "../../core/scale/scale";
+import { Percent } from "../../core/percent/Percent";
+import { Scale } from "../../core/scale/Scale";
 import "./formAnalizer.scss";
 
 function FormAnalizer(props) {

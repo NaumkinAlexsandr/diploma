@@ -1,18 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
-@import "variables";
-@import "mixins";
+@import "Variables";
+@import "Mixins";
 
 @import "../components/login/loginSection.scss";
 @import "../components/apps/formApps.scss";
 @import "../components/formAnalizer/formAnalizer.scss";
 @import "../components/formDiscovery/formDiscovery.scss";
 
-@import "../core/headerEmpty/headerEmpty.scss";
-@import "../core/headerFull/headerFull.scss";
-@import "../core/headerLine/headerLine.scss";
-@import "../core/buttons/button.scss";
-@import "../core/inputs/input.scss";
 * {
   padding: 0;
   margin: 0;

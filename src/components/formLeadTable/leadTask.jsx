@@ -1,11 +1,16 @@
 import { useDispatch } from "react-redux";
-import { removeTodo } from "../formCreateLead/todoSlice";
+import { removeTodo } from "../formCreateLead/leadSlice";
+// import { removeBudget } from "../formCreateLead/InputBudgetSlice";
+// import { removeContacts } from "../formCreateLead//InputContactsSlice";
+// import { removeName } from "../formCreateLead//InputNameSlice";
+// import { removeNextTask } from "../formCreateLead//InputNextTaskSlice";
+// import { removeSource } from "../formCreateLead//InputSourceSlice";
 
 const LeadTask = ({ id, names, source, budget, nextTask, contacts }) => {
   const dispatch = useDispatch();
 
   return (
-    <>
+    <tr>
       <td>
         {names}
         <span className="delete" onClick={() => dispatch(removeTodo({ id }))}>
@@ -26,6 +31,7 @@ const LeadTask = ({ id, names, source, budget, nextTask, contacts }) => {
       </td>
       <td>
         {nextTask}
+        <a href="/diploma/changetasks"></a>
         <span className="delete" onClick={() => dispatch(removeTodo({ id }))}>
           &times;
         </span>
@@ -36,7 +42,7 @@ const LeadTask = ({ id, names, source, budget, nextTask, contacts }) => {
           &times;
         </span>
       </td>
-    </>
+    </tr>
   );
 };
 

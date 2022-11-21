@@ -1,7 +1,7 @@
 import React from "react";
 import "./formChangeTasks.scss";
-import { Arrow } from "../../core/arrow";
-import { Task } from "../../core/task";
+import { Arrow } from "../../core/arrow/Arrow";
+import { Task } from "../../core/task/Task";
 import { Button } from "../../core/buttons/button";
 
 function FormChange() {

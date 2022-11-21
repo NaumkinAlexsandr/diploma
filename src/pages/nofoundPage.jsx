@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { HeaderEmpty } from "../core/headerEmpty/headerEmpty";
-import { HeaderLine } from "../core/headerLine/headerLine";
+import { HeaderEmpty } from "../core/headerEmpty/HeaderEmpty";
+import { HeaderLine } from "../core/headerLine/HeaderLine";
 
 function NofoundPage() {
   return (

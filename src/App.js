@@ -1,17 +1,17 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Login } from "./pages/login";
-import { Apps } from "./pages/apps";
-import { Tasks } from "./pages/tasks";
-import { LeadTable } from "./pages/leadtable";
-import { CreateLead } from "./pages/createlead";
-import { ChangeTasks } from "./pages/changetasks";
-import { Discovery } from "./pages/discovery";
-import { CreateScript } from "./pages/createscript";
-import { Analizer } from "./pages/analizer";
-import { NofoundPage } from "./pages/nofoundpage";
-import { AuthProvider } from "./hooks/authProvider";
-import { AuthPrivate } from "./hooks/authPrivate";
+import { Login } from "./pages/Login";
+import { Apps } from "./pages/Apps";
+import { Tasks } from "./pages/Tasks";
+import { LeadTable } from "./pages/Leadtable";
+import { CreateLead } from "./pages/Createlead";
+import { ChangeTasks } from "./pages/Changetasks";
+import { Discovery } from "./pages/Discovery";
+import { CreateScript } from "./pages/Createscript";
+import { Analizer } from "./pages/Analizer";
+import { NofoundPage } from "./pages/Nofoundpage";
+import { AuthProvider } from "./hooks/AuthProvider";
+import { AuthPrivate } from "./hooks/AuthPrivate";
 
 function App() {
   return (

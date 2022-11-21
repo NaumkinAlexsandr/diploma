@@ -1,12 +1,12 @@
 import React from "react";
-import { TableHead } from "./tableHead";
-import { TableBody } from "./tableBody";
+import { TableHead } from "./TableHead";
+import { TableBody } from "./TableBody";
 import "./formLeadTable.scss";
 
-function FormLeadTable(props) {
+function FormLeadTable() {
   return (
     <div className="scrol">
-      <table className="lead_table">
+      <table className="leadTable">
         <TableHead />
         <TableBody />
       </table>

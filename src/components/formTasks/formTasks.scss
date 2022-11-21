@@ -6,7 +6,7 @@ h1 {
   @include titleText;
 }
 
-.task_table {
+.taskTable {
   margin: 12px 0 0 24px;
 
   th {
@@ -26,11 +26,19 @@ h1 {
   }
 
   .completed {
+    width: auto;
+    height: 18px;
+    @include tableBody;
+    cursor: pointer;
     background-color: $green;
     border: 1px solid #000000;
   }
 
   .deleted {
+    width: auto;
+    height: 18px;
+    @include tableBody;
+    cursor: pointer;
     background: $red;
     border: 1px solid #000000;
   }

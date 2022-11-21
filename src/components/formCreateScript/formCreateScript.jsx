@@ -5,7 +5,7 @@ import "./formCreateScript.scss";
 
 function FormCreateScript() {
   return (
-    <form id="script_form">
+    <form id="scriptForm">
       <Input
         labelName="Name"
         name="name"
@@ -27,7 +27,12 @@ function FormCreateScript() {
         type="text"
         placeholder="Enter your link"
       />
-      <Button className="btn_script" name="Submit" to="/diploma/discovery" />
+      <Button
+        id="button"
+        className="btnScript"
+        name="Submit"
+        to="/diploma/discovery"
+      />
     </form>
   );
 }

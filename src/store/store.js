@@ -9,11 +9,21 @@ import {
   PURGE,
   REGISTER,
 } from "redux-persist";
-import todoReducer from "../components/formCreateLead/todoSlice";
+// import budgetReducer from "../components/formCreateLead/InputBudgetSlice";
+// import contactsReducer from "../components/formCreateLead/InputContactsSlice";
+// import nameReducer from "../components/formCreateLead/InputNameSlice";
+// import nextTaskReducer from "../components/formCreateLead/InputNextTaskSlice";
+// import sourceReducer from "../components/formCreateLead/InputSourceSlice";
+import leadReducer from "../components/formCreateLead/leadSlice";
 import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
 
 const rootReducer = combineReducers({
-  todos: todoReducer,
+  // leads: budgetReducer,
+  // leads: contactsReducer,
+  // leads: nameReducer,
+  // leads: nextTaskReducer,
+  // leads: sourceReducer,
+  leads: leadReducer,
 });
 
 const persistConfig = {
@@ -35,10 +45,13 @@ const store = configureStore({
 
 export const persistor = persistStore(store);
 export default store;
+
 /*
-combineReducers - необходим кля комбенирования нескольких редюсеров
-
-persistReducer - 
-
-persistStore - позволяет работать с персистом
+import { configureStore } from "@reduxjs/toolkit";
+import leadReducer from "../components/formCreateLead/leadSlice";
+export default configureStore({
+  reducer: {
+    leads: leadReducer,
+  },
+});
 */

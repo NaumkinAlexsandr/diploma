@@ -2,13 +2,19 @@ import React from "react";
 import "./formCreateLead.scss";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+
 import {
   addName,
-  addSource,
-  addBudget,
-  addNextTask,
-  addContacts,
-} from "./todoSlice";
+  // addSource,
+  // addBudget,
+  // addNextTask,
+  // addContacts,
+} from "./leadSlice";
+// import { addName } from "./InputNameSlice";
+// import { addSource } from "./InputSourceSlice";
+// import { addBudget } from "./InputBudgetSlice";
+// import { addNextTask } from "./InputNextTaskSlice";
+// import { addContacts } from "./InputContactsSlice";
 
 import { InputName } from "../../core/inputs/inputName";
 import { InputSource } from "../../core/inputs/inputSource";
@@ -28,62 +34,56 @@ function FormCreateLead() {
 
   const addTask = () => {
     dispatch(addName({ names })), setNames("");
-    dispatch(addSource({ source })), setSource("");
-    dispatch(addBudget({ budget })), setBudget("");
-    dispatch(addNextTask({ nextTask })), setNextTask("");
-    dispatch(addContacts({ contacts })), setContacts("");
+    dispatch(addName({ source })), setSource("");
+    dispatch(addName({ budget })), setBudget("");
+    dispatch(addName({ nextTask })), setNextTask("");
+    dispatch(addName({ contacts })), setContacts("");
   };
+
   return (
     <form id="leadForm">
-      <div className="App">
-        <InputName
-          name="name"
-          className="leadName"
-          type="text"
-          placeholder="Enter your name"
-          text={names}
-          handleInput={setNames}
-          handleSubmit={addTask}
-        />
-        <InputSource
-          name="source"
-          className="leadSource"
-          type="text"
-          placeholder="Enter your source"
-          text={source}
-          handleInput={setSource}
-          handleSubmit={addTask}
-        />
-        <InputBudget
-          name="budget"
-          className="leadBudget"
-          type="text"
-          placeholder="Enter your budget"
-          text={budget}
-          handleInput={setBudget}
-          handleSubmit={addTask}
-        />
-        <InputNextTask
-          name="nextTask"
-          className="leadTask"
-          type="text"
-          placeholder="Enter your task"
-          text={nextTask}
-          handleInput={setNextTask}
-          handleSubmit={addTask}
-        />
-        <InputContacts
-          labelName="Contacts"
-          name="contacts"
-          className="leadContacts"
-          type="text"
-          placeholder="Enter your contacts"
-          text={contacts}
-          handleInput={setContacts}
-          handleSubmit={addTask}
-        />
-        <ButtonLead handleSubmit={addTask} />
-      </div>
+      <InputName
+        name="name"
+        className="leadName"
+        type="text"
+        placeholder="Enter your name"
+        text={names}
+        handleInput={setNames}
+      />
+      <InputSource
+        name="source"
+        className="leadSource"
+        type="text"
+        placeholder="Enter your source"
+        text={source}
+        handleInput={setSource}
+      />
+      <InputBudget
+        name="budget"
+        className="leadBudget"
+        type="text"
+        placeholder="Enter your budget"
+        text={budget}
+        handleInput={setBudget}
+      />
+      <InputNextTask
+        name="nextTask"
+        className="leadTask"
+        type="text"
+        placeholder="Enter your task"
+        text={nextTask}
+        handleInput={setNextTask}
+      />
+      <InputContacts
+        labelName="Contacts"
+        name="contacts"
+        className="leadContacts"
+        type="text"
+        placeholder="Enter your contacts"
+        text={contacts}
+        handleInput={setContacts}
+      />
+      <ButtonLead className="btnLead" handleSubmit={addTask} />
     </form>
   );
 }

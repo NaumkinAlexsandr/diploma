@@ -1,7 +1,7 @@
 import React from "react";
-import { HeaderEmpty } from "../core/headerEmpty/headerEmpty";
-import { HeaderLine } from "../core/headerLine/headerLine";
-import { FormApps } from "../components/apps/formApps";
+import { HeaderEmpty } from "../core/headerEmpty/HeaderEmpty";
+import { HeaderLine } from "../core/headerLine/HeaderLine";
+import { FormApps } from "../components/apps/FormApps";
 
 function Apps() {
   return (

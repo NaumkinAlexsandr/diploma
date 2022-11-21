@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HeaderFull } from "../core/headerFull/headerFull";
-import { HeaderLine } from "../core/headerLine/headerLine";
-import { FormTasks } from "../components/formTasks/formTasks";
+import { HeaderFull } from "../core/headerFull/HeaderFull";
+import { HeaderLine } from "../core/headerLine/HeaderLine";
+import { FormTasks } from "../components/formTasks/FormTasks";
 
 function Tasks() {
   return (

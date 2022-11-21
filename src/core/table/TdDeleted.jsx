@@ -3,7 +3,7 @@ import React from "react";
 function Deleted(props) {
   return (
     <td>
-      <span className="deleted">{props.text}</span>
+      <button className="deleted">{props.text}</button>
     </td>
   );
 }

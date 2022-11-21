@@ -1,15 +1,17 @@
 import { useSelector } from "react-redux";
-import { LeadTask } from "./leadTask";
+import { LeadTask } from "./LeadTask";
+import { LeadTask3 } from "./LeadTask3";
 
 const LaadTable = () => {
-  const todos = useSelector((state) => state.todos.todos);
+  const leads = useSelector((state) => state.leads.leads);
 
+  console.log(leads);
   return (
-    <tr>
-      {todos.map((todo) => (
-        <LeadTask key={todo.id} {...todo} />
+    <>
+      {leads.map((lead) => (
+        <LeadTask key={lead.id} {...lead} />
       ))}
-    </tr>
+    </>
   );
 };
 

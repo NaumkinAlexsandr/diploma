@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HeaderFull } from "../core/headerFull/headerFull";
-import { HeaderLine } from "../core/headerLine/headerLine";
-import { FormAnalizer } from "../components/formAnalizer/formAnalizer";
+import { HeaderFull } from "../core/headerFull/HeaderFull";
+import { HeaderLine } from "../core/headerLine/HeaderLine";
+import { FormAnalizer } from "../components/formAnalizer/FormAnalizer";
 
 function Analizer() {
   return (

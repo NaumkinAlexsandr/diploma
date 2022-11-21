@@ -18,9 +18,13 @@
   .btnLead {
     left: 100px;
     top: 752px;
+    @include btn;
+    @include buttonText;
 
     a {
       position: absolute;
+      width: 231px;
+      height: 66px;
       top: 0;
       left: 0;
     }

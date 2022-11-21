@@ -2,7 +2,7 @@
 @import "../../styles/mixins";
 
 #script {
-  #script_form {
+  #scriptForm {
     margin-left: 42px;
     @include inputText;
 
@@ -15,7 +15,7 @@
     }
   }
 
-  .btn_script {
+  .btnScript {
     left: 100px;
     top: 552px;
   }

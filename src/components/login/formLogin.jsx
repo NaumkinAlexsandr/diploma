@@ -37,7 +37,12 @@ function FormLogin(props) {
         type="password"
         placeholder="Enter your password"
       />
-      <Button to="/diploma/apps" className="login_btn" name="Submit" />
+      <Button
+        id="button"
+        to="/diploma/apps"
+        className="btn loginBtn"
+        name="Submit"
+      />
     </form>
   );
 }

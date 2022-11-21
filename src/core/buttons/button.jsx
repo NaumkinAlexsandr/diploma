@@ -5,7 +5,7 @@ import "./button.scss";
 function Button(props) {
   return (
     <>
-      <button type="submit" className={props.className}>
+      <button id="button" type="submit" className={props.className}>
         {props.name}
       </button>
       <Link className={props.className} to={props.to}></Link>
