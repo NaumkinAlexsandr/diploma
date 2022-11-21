@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Formik, Field, Form, useField, useFormikContext } from "formik";
 
-import { Input } from "../../core/inputs/input";
-import { Button } from "../../core/buttons/button";
+import { Input } from "../../core/input/input";
+import { Button } from "../../core/button/button";
 import "./formCreateScript.scss";
 
 const MyField = (props) => {

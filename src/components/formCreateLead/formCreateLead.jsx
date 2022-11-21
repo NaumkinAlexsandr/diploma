@@ -16,12 +16,12 @@ import {
 // import { addNextTask } from "./InputNextTaskSlice";
 // import { addContacts } from "./InputContactsSlice";
 
-import { InputName } from "../../core/inputs/inputName";
-import { InputSource } from "../../core/inputs/inputSource";
-import { InputBudget } from "../../core/inputs/inputBudget";
-import { InputNextTask } from "../../core/inputs/inputNextTask";
-import { InputContacts } from "../../core/inputs/inputContacts";
-import { ButtonLead } from "../../core/buttons/buttonLead";
+import { InputName } from "../../core/input/inputName";
+import { InputSource } from "../../core/input/inputSource";
+import { InputBudget } from "../../core/input/inputBudget";
+import { InputNextTask } from "../../core/input/inputNextTask";
+import { InputContacts } from "../../core/input/inputContacts";
+import { ButtonLead } from "../../core/button/buttonLead";
 
 function FormCreateLead() {
   const [names, setNames] = useState("");

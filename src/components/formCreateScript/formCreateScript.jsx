@@ -1,6 +1,6 @@
 import React from "react";
-import { Input } from "../../core/inputs/input";
-import { Button } from "../../core/buttons/button";
+import { Input } from "../../core/input/input";
+import { Button } from "../../core/button/button";
 import "./formCreateScript.scss";
 
 function FormCreateScript() {

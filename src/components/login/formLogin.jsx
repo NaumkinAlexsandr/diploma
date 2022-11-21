@@ -2,8 +2,8 @@ import React from "react";
 import "./formLogin.scss";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/useAuth";
-import { Input } from "../../core/inputs/input";
-import { Button } from "../../core/buttons/button";
+import { Input } from "../../core/input/input";
+import { Button } from "../../core/button/button";
 
 function FormLogin(props) {
   const navigate = useNavigate();
