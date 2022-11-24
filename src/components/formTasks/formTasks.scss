@@ -43,6 +43,14 @@ h1 {
     border: 1px solid #000000;
   }
 
+  .notCompleted {
+    width: auto;
+    height: 18px;
+    @include tableBody;
+    cursor: pointer;
+    border: 1px solid #000000;
+  }
+
   .zeroDays {
     color: $dark;
   }
