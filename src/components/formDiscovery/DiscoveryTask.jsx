@@ -1,19 +1,12 @@
-import { useSelector } from "react-redux";
 import { DiscoveryList } from "./DiscoveryList";
+import { useDispatch, useSelector } from "react-redux";
+
 import React from "react";
 
-const DiscoveryTask = () => {
-  const scripts = useSelector((state) => state.scripts.scripts);
+const DiscoveryTask = ({ sources }) => {
+  const dispatch = useDispatch();
 
-  return (
-    <ul>
-      <>
-        {scripts.map((script) => (
-          <DiscoveryList key={script.id} {...script} />
-        ))}
-      </>
-    </ul>
-  );
+  return <ul>{sources}</ul>;
 };
 
 export { DiscoveryTask };

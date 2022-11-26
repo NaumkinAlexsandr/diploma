@@ -9,7 +9,7 @@
     @include inputText;
   }
 
-  .newSource {
+  .newSources li:first-child {
     @include inputText;
   }
 

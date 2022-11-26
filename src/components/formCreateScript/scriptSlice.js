@@ -8,7 +8,7 @@ const scriptSlice = createSlice({
   reducers: {
     addScripts(state, action) {
       state.scripts.push({
-        id: new Date().toISOString(),
+        id: new Date().toISOString(+1),
         names: action.payload.names,
         source: action.payload.source,
         link: action.payload.link,

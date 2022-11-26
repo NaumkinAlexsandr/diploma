@@ -1,4 +1,4 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { removeScripts } from "../formCreateScript/scriptSlice";
 
 const DiscoveryList = ({ id, names, source, link }) => {
