@@ -9,21 +9,22 @@ import {
   PURGE,
   REGISTER,
 } from "redux-persist";
-// import budgetReducer from "../components/formCreateLead/InputBudgetSlice";
-// import contactsReducer from "../components/formCreateLead/InputContactsSlice";
-// import nameReducer from "../components/formCreateLead/InputNameSlice";
-// import nextTaskReducer from "../components/formCreateLead/InputNextTaskSlice";
-// import sourceReducer from "../components/formCreateLead/InputSourceSlice";
-import leadReducer from "../components/formCreateLead/leadSlice";
-import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
+
+import nameReducer from "../components/formCreateLead/nameSlice";
+import sourceReducer from "../components/formCreateLead/sourceSlice";
+import budgetReducer from "../components/formCreateLead/budgetsSlice";
+import nextTasksReducer from "../components/formCreateLead/nextTasksSlice";
+import contactsReducer from "../components/formCreateLead/contactsSlice";
+import scriptReducer from "../components/formCreateScript/scriptSlice";
+import storage from "redux-persist/lib/storage";
 
 const rootReducer = combineReducers({
-  // leads: budgetReducer,
-  // leads: contactsReducer,
-  // leads: nameReducer,
-  // leads: nextTaskReducer,
-  // leads: sourceReducer,
-  leads: leadReducer,
+  names: nameReducer,
+  sources: sourceReducer,
+  budgets: budgetReducer,
+  nextTasks: nextTasksReducer,
+  contacts: contactsReducer,
+  scripts: scriptReducer,
 });
 
 const persistConfig = {

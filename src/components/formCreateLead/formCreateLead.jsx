@@ -1,30 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./formCreateLead.scss";
-import { useState } from "react";
 import { useDispatch } from "react-redux";
-
-import {
-  addName,
-  // addSource,
-  // addBudget,
-  // addNextTask,
-  // addContacts,
-} from "./leadSlice";
-// import { addName } from "./InputNameSlice";
-// import { addSource } from "./InputSourceSlice";
-// import { addBudget } from "./InputBudgetSlice";
-// import { addNextTask } from "./InputNextTaskSlice";
-// import { addContacts } from "./InputContactsSlice";
-
-import { InputName } from "../../core/input/inputName";
-import { InputSource } from "../../core/input/inputSource";
-import { InputBudget } from "../../core/input/inputBudget";
-import { InputNextTask } from "../../core/input/inputNextTask";
-import { InputContacts } from "../../core/input/inputContacts";
+import { Input } from "../../core/input/input";
+import { addName } from "./nameSlice";
+import { addSource } from "./sourceSlice";
+import { addBudget } from "./budgetsSlice";
+import { addNextTask } from "./nextTasksSlice";
+import { addContacts } from "./contactsSlice";
 import { ButtonLead } from "../../core/button/buttonLead";
 
 function FormCreateLead() {
-  const [names, setNames] = useState("");
+  const [name, setName] = useState("");
   const [source, setSource] = useState("");
   const [budget, setBudget] = useState("");
   const [nextTask, setNextTask] = useState("");
@@ -33,57 +19,76 @@ function FormCreateLead() {
   const dispatch = useDispatch();
 
   const addTask = () => {
-    dispatch(addName({ names })), setNames("");
-    dispatch(addName({ source })), setSource("");
-    dispatch(addName({ budget })), setBudget("");
-    dispatch(addName({ nextTask })), setNextTask("");
-    dispatch(addName({ contacts })), setContacts("");
+    dispatch(addName({ name })), setName("");
+    dispatch(addSource({ source })), setSource("");
+    dispatch(addBudget({ budget })), setBudget("");
+    dispatch(addNextTask({ nextTask })), setNextTask("");
+    dispatch(addContacts({ contacts })), setContacts("");
   };
 
   return (
     <form id="leadForm">
-      <InputName
-        name="name"
-        className="leadName"
-        type="text"
-        placeholder="Enter your name"
-        text={names}
-        handleInput={setNames}
+      <label>
+        Name
+        <Input
+          name="name"
+          className="leadName"
+          type="text"
+          placeholder="Enter your name"
+          text={name}
+          handleInput={setName}
+        />
+      </label>
+      <label>
+        Source
+        <Input
+          name="source"
+          className="leadSource"
+          type="text"
+          placeholder="Enter your source"
+          text={source}
+          handleInput={setSource}
+        />
+      </label>
+      <label>
+        Budget
+        <Input
+          name="budget"
+          className="leadBudget"
+          type="text"
+          placeholder="Enter your budget"
+          text={budget}
+          handleInput={setBudget}
+        />
+      </label>
+      <label>
+        Next Task
+        <Input
+          name="nextTask"
+          className="leadTask"
+          type="text"
+          placeholder="Enter your task"
+          text={nextTask}
+          handleInput={setNextTask}
+        />
+      </label>
+      <label>
+        Contacts
+        <Input
+          name="contacts"
+          className="leadContacts"
+          type="text"
+          placeholder="Enter your contacts"
+          text={contacts}
+          handleInput={setContacts}
+        />
+      </label>
+
+      <ButtonLead
+        className="btnLead"
+        handleSubmit={addTask}
+        to="/diploma/leadTable"
       />
-      <InputSource
-        name="source"
-        className="leadSource"
-        type="text"
-        placeholder="Enter your source"
-        text={source}
-        handleInput={setSource}
-      />
-      <InputBudget
-        name="budget"
-        className="leadBudget"
-        type="text"
-        placeholder="Enter your budget"
-        text={budget}
-        handleInput={setBudget}
-      />
-      <InputNextTask
-        name="nextTask"
-        className="leadTask"
-        type="text"
-        placeholder="Enter your task"
-        text={nextTask}
-        handleInput={setNextTask}
-      />
-      <InputContacts
-        labelName="Contacts"
-        name="contacts"
-        className="leadContacts"
-        type="text"
-        placeholder="Enter your contacts"
-        text={contacts}
-        handleInput={setContacts}
-      />
-      <ButtonLead className="btnLead" handleSubmit={addTask} />
     </form>
   );
 }

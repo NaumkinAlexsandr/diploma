@@ -5,10 +5,12 @@ import "./formTasks.scss";
 
 function FormTasks() {
   return (
-    <table className="taskTable">
-      <TableHead />
-      <TableBody />
-    </table>
+    <div className="scrol">
+      <table className="taskTable">
+        <TableHead />
+        <TableBody />
+      </table>
+    </div>
   );
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 
-function Td({ name }) {
-  return <td>{name}</td>;
+function Td(props) {
+  return <td>{props.tdText}</td>;
 }
 
 export { Td };

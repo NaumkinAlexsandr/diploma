@@ -6,60 +6,68 @@ h1 {
   @include titleText;
 }
 
-.taskTable {
-  margin: 12px 0 0 24px;
-
-  th {
-    padding: 0 10px;
-    width: auto;
-    height: 30px;
-    background-color: $yellow;
-    @include tableHead;
+.scrol {
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    width: 0px;
   }
 
-  td {
-    width: auto;
-    height: 30px;
-    padding: 0 10px;
-    @include tableBody;
-    position: relative;
-  }
+  .taskTable {
+    min-width: 360px;
+    margin: 12px 0 0 24px;
 
-  .completed {
-    width: auto;
-    height: 18px;
-    @include tableBody;
-    cursor: pointer;
-    background-color: $green;
-    border: 1px solid #000000;
-  }
+    th {
+      padding: 0 10px;
+      width: auto;
+      height: 30px;
+      background-color: $yellow;
+      @include tableHead;
+    }
 
-  .deleted {
-    width: auto;
-    height: 18px;
-    @include tableBody;
-    cursor: pointer;
-    background: $red;
-    border: 1px solid #000000;
-  }
+    td {
+      width: auto;
+      height: 30px;
+      padding: 0 10px;
+      @include tableBody;
+      position: relative;
+    }
 
-  .notCompleted {
-    width: auto;
-    height: 18px;
-    @include tableBody;
-    cursor: pointer;
-    border: 1px solid #000000;
-  }
+    .notCompleted {
+      width: auto;
+      height: 18px;
+      @include tableBody;
+      cursor: pointer;
+      border: 1px solid #000000;
+    }
 
-  .zeroDays {
-    color: $dark;
-  }
+    .completed {
+      width: auto;
+      height: 18px;
+      @include tableBody;
+      cursor: pointer;
+      background-color: $green;
+      border: 1px solid #000000;
+    }
 
-  .oneDays {
-    color: $yellow;
-  }
+    .deleted {
+      width: auto;
+      height: 18px;
+      @include tableBody;
+      cursor: pointer;
+      background: $red;
+      border: 1px solid #000000;
+    }
 
-  .twoDays {
-    color: $red;
+    .zeroDays {
+      color: $dark;
+    }
+
+    .oneDays {
+      color: $yellow;
+    }
+
+    .twoDays {
+      color: $red;
+    }
   }
 }

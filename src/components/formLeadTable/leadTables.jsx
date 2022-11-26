@@ -1,16 +1,45 @@
 import { useSelector } from "react-redux";
-import { LeadTask } from "./LeadTask";
-import { LeadTask3 } from "./LeadTask3";
+
+import { Names } from "./Names";
+import { Source } from "./Source";
+import { Budget } from "./Budget";
+import { NextTask } from "./NextTask";
+import { Contacts } from "./Contacts";
 
 const LaadTable = () => {
-  const leads = useSelector((state) => state.leads.leads);
+  const names = useSelector((state) => state.names.names);
+  const sources = useSelector((state) => state.sources.sources);
+  const budgets = useSelector((state) => state.budgets.budgets);
+  const nextTasks = useSelector((state) => state.nextTasks.nextTasks);
+  const contacts = useSelector((state) => state.contacts.contacts);
 
-  console.log(leads);
   return (
     <>
-      {leads.map((lead) => (
-        <LeadTask key={lead.id} {...lead} />
-      ))}
+      <td>
+        {names.map((name) => (
+          <Names key={name.id} {...name} />
+        ))}
+      </td>
+      <td>
+        {sources.map((source) => (
+          <Source key={source.id} {...source} />
+        ))}
+      </td>
+      <td>
+        {budgets.map((budget) => (
+          <Budget key={budget.id} {...budget} />
+        ))}
+      </td>
+      <td>
+        {nextTasks.map((nextTask) => (
+          <NextTask key={nextTask.id} {...nextTask} />
+        ))}
+      </td>
+      <td>
+        {contacts.map((contact) => (
+          <Contacts key={contact.id} {...contact} />
+        ))}
+      </td>
     </>
   );
 };

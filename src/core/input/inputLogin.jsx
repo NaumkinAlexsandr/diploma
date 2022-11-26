@@ -18,9 +18,6 @@ function Input({
       placeholder={placeholder}
       text={text}
       value={value}
-      onChange={(e) => {
-        handleInput(e.target.value);
-      }}
     />
   );
 }

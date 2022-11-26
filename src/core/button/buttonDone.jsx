@@ -20,7 +20,7 @@ function Done(props) {
             handleDone(e.target.value);
           }}
         >
-          {done.isDone ? "Mark as Done" : "Mark as Not done"}
+          Mark as Done
         </button>
       </td>
       <td>
@@ -32,7 +32,7 @@ function Done(props) {
             handleDone(e.target.value);
           }}
         >
-          {done.isDone ? "Delete task" : "Not done task"}
+          Delete task
         </button>
       </td>
     </>

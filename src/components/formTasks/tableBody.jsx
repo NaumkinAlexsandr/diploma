@@ -23,7 +23,6 @@ function TableBody() {
   const removeTasks = (index) => {
     setTasks(tasks.filter((task) => task !== index));
   };
-
   return (
     <tbody>
       {tasks.map((task, id) => (
@@ -34,7 +33,17 @@ function TableBody() {
               removeTasks(task);
             }}
           />
-          <td>{task.days}</td>
+          <td
+            className={
+              task.days > 1
+                ? "twoDays"
+                : "oneDays" && task.days < 1
+                ? "zeroDays"
+                : "oneDays"
+            }
+          >
+            {task.days}
+          </td>
         </tr>
       ))}
     </tbody>

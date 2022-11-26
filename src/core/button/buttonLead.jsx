@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./button.scss";
 
-function ButtonLead({ handleSubmit }) {
+function ButtonLead({ className, to, handleSubmit }) {
   return (
     <>
-      <button className="btnLead" onClick={handleSubmit}>
-        <Link to="/diploma/leadTable" />
+      <button className={className} onClick={handleSubmit}>
+        <Link to={to} />
         Submit
       </button>
     </>

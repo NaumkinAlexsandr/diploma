@@ -2,7 +2,7 @@ import React from "react";
 import "./formLogin.scss";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/useAuth";
-import { Input } from "../../core/input/input";
+import { Input } from "../../core/input/inputLogin";
 import { Button } from "../../core/button/button";
 
 function FormLogin(props) {
@@ -23,20 +23,24 @@ function FormLogin(props) {
 
   return (
     <form id={props.id} onSubmit={handleSubmit}>
-      <Input
-        labelName="Email"
-        name="email"
-        className="email"
-        type="email"
-        placeholder="Enter your email"
-      />
-      <Input
-        labelName="Password"
-        name="password"
-        className="password"
-        type="password"
-        placeholder="Enter your password"
-      />
+      <label>
+        Email
+        <Input
+          name="email"
+          className="email"
+          type="email"
+          placeholder="Enter your email"
+        />
+      </label>
+      <label>
+        Password
+        <Input
+          name="password"
+          className="password"
+          type="password"
+          placeholder="Enter your password"
+        />
+      </label>
       <Button
         id="button"
         to="/diploma/apps"

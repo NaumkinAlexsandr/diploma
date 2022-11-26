@@ -8,6 +8,11 @@
     margin-bottom: 10px;
     @include inputText;
   }
+
+  .newSource {
+    @include inputText;
+  }
+
   li {
     padding-top: 8px;
     list-style: none;

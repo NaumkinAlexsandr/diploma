@@ -2,7 +2,6 @@ import React from "react";
 import { Td } from "../../core/table/Td";
 import { TdLead } from "../../core/table/TdLead";
 import { LaadTable } from "./LeadTables";
-import { LeadTask } from "./LeadTask";
 
 function TableBody() {
   return (
