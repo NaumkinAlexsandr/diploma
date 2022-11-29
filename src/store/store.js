@@ -10,20 +10,12 @@ import {
   REGISTER,
 } from "redux-persist";
 
-import nameReducer from "../components/formCreateLead/nameSlice";
-import sourceReducer from "../components/formCreateLead/sourceSlice";
-import budgetReducer from "../components/formCreateLead/budgetsSlice";
-import nextTasksReducer from "../components/formCreateLead/nextTasksSlice";
-import contactsReducer from "../components/formCreateLead/contactsSlice";
 import scriptReducer from "../components/formCreateScript/scriptSlice";
+import leadsReducer from "../components/formCreateLead/leadSlice";
 import storage from "redux-persist/lib/storage";
 
 const rootReducer = combineReducers({
-  names: nameReducer,
-  sources: sourceReducer,
-  budgets: budgetReducer,
-  nextTasks: nextTasksReducer,
-  contacts: contactsReducer,
+  leads: leadsReducer,
   scripts: scriptReducer,
 });
 

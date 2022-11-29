@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./formCreateLead.scss";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Input } from "../../core/input/input";
-import { addName } from "./nameSlice";
-import { addSource } from "./sourceSlice";
-import { addBudget } from "./budgetsSlice";
-import { addNextTask } from "./nextTasksSlice";
-import { addContacts } from "./contactsSlice";
 import { ButtonLead } from "../../core/button/buttonLead";
+import { addLeads } from "./leadSlice";
 
 function FormCreateLead() {
-  const [name, setName] = useState("");
+  const [names, setNames] = useState("");
   const [source, setSource] = useState("");
   const [budget, setBudget] = useState("");
   const [nextTask, setNextTask] = useState("");
@@ -19,11 +16,7 @@ function FormCreateLead() {
   const dispatch = useDispatch();
 
   const addTask = () => {
-    dispatch(addName({ name })), setName("");
-    dispatch(addSource({ source })), setSource("");
-    dispatch(addBudget({ budget })), setBudget("");
-    dispatch(addNextTask({ nextTask })), setNextTask("");
-    dispatch(addContacts({ contacts })), setContacts("");
+    dispatch(addLeads({ names, source, budget, nextTask, contacts }));
   };
 
   return (
@@ -36,7 +29,7 @@ function FormCreateLead() {
           type="text"
           placeholder="Enter your name"
           text={name}
-          handleInput={setName}
+          handleInput={setNames}
         />
       </label>
       <label>

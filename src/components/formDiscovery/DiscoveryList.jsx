@@ -1,23 +1,19 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { removeScripts } from "../formCreateScript/scriptSlice";
 
-const DiscoveryList = ({ id, names, source, link }) => {
+const DiscoveryList = ({ id, names, sources, link }) => {
   const dispatch = useDispatch();
 
   return (
-    <>
-      <li>
-        {names}
-        {source}
-        {link}
-        <span
-          className="delete"
-          onClick={() => dispatch(removeScripts({ id }))}
-        >
-          &times;
-        </span>
-      </li>
-    </>
+    <ul>
+      New Discovery
+      <span className="delete" onClick={() => dispatch(removeScripts({ id }))}>
+        &times;
+      </span>
+      <li>{names}</li>
+      <li>{sources}</li>
+      <li>{link}</li>
+    </ul>
   );
 };
 

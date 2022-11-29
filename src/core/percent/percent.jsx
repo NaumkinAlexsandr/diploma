@@ -1,13 +1,14 @@
 import React from "react";
 import "./percent.scss";
 
-function Percent(props) {
+function Percent({ className, percent, text }) {
   return (
     <div className="percent_scale">
+      <span className={className}></span>
       <span className="percent">
-        <h5>{props.percent}%</h5>
+        <h5 value={percent}>{percent}%</h5>
       </span>
-      <h5>{props.text}</h5>
+      <h5>{text}</h5>
     </div>
   );
 }

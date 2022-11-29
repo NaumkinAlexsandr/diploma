@@ -1,12 +1,11 @@
 import React from "react";
 import "./titleDiscovery.scss";
-import { DiscoveryTask } from "./DiscoveryTask";
 import { DiscoveryList } from "./DiscoveryList";
 import { useSelector } from "react-redux";
 
 function FormDiscovery() {
   const scripts = useSelector((state) => state.scripts.scripts);
-  const sources = useSelector((state) => state.sources.sources);
+  const leads = useSelector((state) => state.leads.leads);
 
   const upworkLists = [
     {
@@ -36,26 +35,46 @@ function FormDiscovery() {
     <>
       <div id="social">
         {upworkLists.map((script) => (
-          <ul className="list-items" key={script.id}>
+          <ul key={script.id}>
             {script.title}
-            <li className="text">{script.scriptOne}</li>
-            <li className="text">{script.scriptTwo}</li>
-            <li className="text">{script.scriptThree}</li>
+            <li>{script.scriptOne}</li>
+            <li>{script.scriptTwo}</li>
+            <li>{script.scriptThree}</li>
           </ul>
         ))}
-        <ul className="newSources">
-          {sources.map((source) => (
-            <DiscoveryList key={source.id} {...source} />
+        <>
+          {scripts.map((script) => (
+            <DiscoveryList key={script.id} {...script} />
           ))}
-          <>
-            {scripts.map((script) => (
-              <DiscoveryList key={script.id} {...script} />
-            ))}
-          </>
-        </ul>
+        </>
       </div>
     </>
   );
 }
 
 export { FormDiscovery };
+/*
+<>
+  {leads.map((lead) => (
+    <ul key={lead.id}>
+      <DiscoveryTask {...lead} />
+      {scripts.map((script) => (
+        <li key={script.id}>
+          <DiscoveryList {...script} />
+        </li>
+      ))}
+    </ul>
+  ))}
+</>;
+*/
+
+/*
+{scripts.map((script) => (
+  <ul key={script.id}>
+    {leads.map((lead) => (
+      <DiscoveryTask key={lead.id} {...lead} />
+    ))}
+    <DiscoveryList {...script} />
+  </ul>
+))}
+*/

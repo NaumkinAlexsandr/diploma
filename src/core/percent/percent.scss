@@ -1,13 +1,33 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins";
 
-#analizerForm .percent_scale {
-  h5 {
-    margin-left: 11px;
-    @include liText;
+#analizerForm {
+  .scale {
+    height: 13px;
+    background-color: $red;
+    margin-right: 5px;
   }
 
-  h5:last-child {
-    margin-left: 5px;
+  .scale_one {
+    width: 105px;
+  }
+
+  .scale_two {
+    width: 97px;
+  }
+
+  .scale_three {
+    width: 18px;
+  }
+
+  .percent_scale {
+    h5 {
+      margin-left: 11px;
+      @include liText;
+    }
+
+    h5:last-child {
+      margin-left: 5px;
+    }
   }
 }

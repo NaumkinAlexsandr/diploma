@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-function Done(props) {
-  const [done, setDone] = useState(" ");
+function Done({ onClick }) {
+  const [done, setDone] = useState("isDone");
 
   function handleDone() {
     setDone((prevState) => ({
@@ -25,7 +25,7 @@ function Done(props) {
       </td>
       <td>
         <button
-          onClick={props.onClick}
+          onClick={onClick}
           className={done.isDone ? "deleted" : "notCompleted"}
           value="deleted"
           onChange={(e) => {

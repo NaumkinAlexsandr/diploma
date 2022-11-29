@@ -7,15 +7,13 @@ import { ButtonLead } from "../../core/button/buttonLead";
 
 function FormCreateScript() {
   const [names, setNames] = useState("");
-  const [source, setSource] = useState("");
+  const [sources, setSources] = useState("");
   const [link, setLink] = useState("");
 
   const dispatch = useDispatch();
 
   const addDiscovery = () => {
-    dispatch(addScripts({ names })), setNames("");
-    dispatch(addScripts({ source })), setSource("");
-    dispatch(addScripts({ link })), setLink("");
+    dispatch(addScripts({ names, sources, link }));
   };
 
   return (
@@ -38,8 +36,8 @@ function FormCreateScript() {
           className="scriptSource"
           type="text"
           placeholder="Enter your source"
-          text={source}
-          handleInput={setSource}
+          text={sources}
+          handleInput={setSources}
         />
       </label>
       <label>

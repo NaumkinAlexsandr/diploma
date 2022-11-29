@@ -3,52 +3,21 @@ import { Percent } from "../../core/percent/Percent";
 import { Scale } from "../../core/scale/Scale";
 import "./formAnalizer.scss";
 
-function FormAnalizer(props) {
+function FormAnalizer() {
   return (
     <div id="analizerForm">
       <div>
-        <Scale className="scale scale_one" />
-        <Percent percent="30" text="Make Offer" />
+        <Percent className="scale scale_one" percent="30" text="Make Offer" />
       </div>
       <div>
-        <Scale className="scale scale_two" />
-        <Percent percent="28" text="Bid" />
+        <Percent className="scale scale_two" percent="28" text="Bid" />
       </div>
       <div>
-        <Scale className="scale scale_three" />
-        <Percent percent="4" text="Invite for First Call" />
-      </div>
-      <div>
-        <Scale className="scale scale_three" />
-        <Percent percent="4" text="Invite for First Call" />
-      </div>
-      <div>
-        <Scale className="scale scale_three" />
-        <Percent percent="4" text="Invite for First Call" />
-      </div>
-      <div>
-        <Scale className="scale scale_three" />
-        <Percent percent="4" text="Invite for First Call" />
-      </div>
-      <div>
-        <Scale className="scale scale_three" />
-        <Percent percent="4" text="Invite for First Call" />
-      </div>
-      <div>
-        <Scale className="scale scale_three" />
-        <Percent percent="4" text="Invite for First Call" />
-      </div>
-      <div>
-        <Scale className="scale scale_three" />
-        <Percent percent="4" text="Invite for First Call" />
-      </div>
-      <div>
-        <Scale className="scale scale_three" />
-        <Percent percent="4" text="Invite for First Call" />
-      </div>
-      <div>
-        <Scale className="scale scale_three" />
-        <Percent percent="4" text="Invite for First Call" />
+        <Percent
+          className="scale scale_three"
+          percent="4"
+          text="Invite for First Call"
+        />
       </div>
     </div>
   );

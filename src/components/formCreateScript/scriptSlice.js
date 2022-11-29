@@ -10,7 +10,7 @@ const scriptSlice = createSlice({
       state.scripts.push({
         id: new Date().toISOString(+1),
         names: action.payload.names,
-        source: action.payload.source,
+        sources: action.payload.sources,
         link: action.payload.link,
       });
     },

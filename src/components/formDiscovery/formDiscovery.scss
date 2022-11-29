@@ -9,10 +9,6 @@
     @include inputText;
   }
 
-  .newSources li:first-child {
-    @include inputText;
-  }
-
   li {
     padding-top: 8px;
     list-style: none;
