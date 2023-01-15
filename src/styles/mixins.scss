@@ -55,8 +55,9 @@
 @mixin btn {
   display: flex;
   padding: 22px 84px;
-  position: absolute;
-  width: 231px;
+  position: relative;
+  width: 100%;
+  max-width: 231px;
   height: 66px;
   background: $green;
   border: 1px solid $green;

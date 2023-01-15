@@ -1,38 +1,42 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins";
 
-.scrol {
-  overflow-x: scroll;
-  &::-webkit-scrollbar {
-    width: 0px;
-  }
-
-  .leadTable {
-    width: 490px;
-    height: 142px;
-    margin: 12px 0 10px 24px;
-
-    th {
-      padding: 0 10px;
-      width: auto;
-      height: 30px;
-      background-color: $yellow;
-      @include tableHead;
+#lead_table {
+  .scrol {
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      width: 0px;
     }
 
-    td {
-      width: auto;
-      height: 30px;
-      padding: 0 10px;
-      @include tableBody;
-      position: relative;
+    .leadTable {
+      width: 490px;
+      height: 142px;
+      margin: 12px 0 10px 24px;
 
-      a {
-        width: 93px;
-        height: 34px;
-        display: flex;
-        position: absolute;
-        top: 0;
+      th {
+        padding: 0 10px;
+        width: auto;
+        height: 30px;
+        background-color: $yellow;
+        @include tableHead;
+      }
+
+      td {
+        width: auto;
+        height: 30px;
+        padding: 0 10px;
+        @include tableBody;
+        position: relative;
+
+        a {
+          width: 93px;
+          height: 34px;
+          display: flex;
+          position: absolute;
+          top: 0;
+        }
       }
     }
   }

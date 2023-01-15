@@ -7,8 +7,8 @@ function Button(props) {
     <>
       <button id="button" type="submit" className={props.className}>
         {props.name}
+        <Link className={props.className} to={props.to}></Link>
       </button>
-      <Link className={props.className} to={props.to}></Link>
     </>
   );
 }

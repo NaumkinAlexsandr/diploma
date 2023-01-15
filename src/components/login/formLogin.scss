@@ -2,7 +2,12 @@
 @import "../../styles/mixins";
 
 #loginForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 40px;
-  margin-left: 40px;
+  padding: 0 5px;
   @include inputText;
 }
